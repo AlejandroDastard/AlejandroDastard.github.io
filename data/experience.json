@@ -1,0 +1,48 @@
+[
+    {
+        "role": {
+            "es": "Desarrollador Web",
+            "en": "Web Developer"
+        },
+        "company": "Sitelicon Ecommerce Services",
+        "bgImage": "imgs/experience/sitelicon-bg.webp",
+        "logoImage": "imgs/experience/sitelicon-logo.webp",
+        "dates": {
+            "es": "Mar 2025 - May 2026",
+            "en": "Mar 2025 - May 2026"
+        },
+        "badge": {
+            "es": "Prácticas",
+            "en": "Internship"
+        },
+        "description": {
+            "es": "Desarrollo e implementación de soluciones web y comercio electrónico utilizando <strong>WordPress, PHP y Laravel</strong>. Optimización de sitios web y desarrollo de funcionalidades a medida.",
+            "en": "Development and implementation of web and e-commerce solutions utilizing <strong>WordPress, PHP, and Laravel</strong>. Website optimization and custom features development."
+        },
+        "tags": ["PHP", "Laravel", "WordPress", "MySQL"],
+        "icon": "fas fa-laptop-code"
+    },
+    {
+        "role": {
+            "es": "Técnico de Soporte TI",
+            "en": "IT Support Technician"
+        },
+        "company": "EADEA",
+        "bgImage": "imgs/experience/eadea-bg.webp",
+        "logoImage": "imgs/experience/eadea-logo.webp",
+        "dates": {
+            "es": "May 2025 - Jun 2025",
+            "en": "May 2025 - Jun 2025"
+        },
+        "badge": {
+            "es": "Prácticas",
+            "en": "Internship"
+        },
+        "description": {
+            "es": "Soporte técnico a clientes a través de <strong>CRM</strong>, administración de <strong>Google Workspace</strong> y creacion de bases de conocimiento. Automatización de procesos con <strong>HubSpot</strong> y scripts para hojas de cálculo.",
+            "en": "Customer technical support via <strong>CRM</strong>, <strong>Google Workspace</strong> administration, and knowledge base creation. Workflow optimization with <strong>HubSpot</strong> and spreadsheet scripting."
+        },
+        "tags": ["HubSpot", "Google Workspace", "CRM", "Automation"],
+        "icon": "fas fa-headset"
+    }
+]

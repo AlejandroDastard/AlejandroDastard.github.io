@@ -1,0 +1,56 @@
+[
+    {
+        "degree": {
+            "es": "Máster de FP en IA y Big Data",
+            "en": "Master's (FP) in AI & Big Data"
+        },
+        "institution": "U-Tad",
+        "bgImage": "imgs/education/utad-bg.webp",
+        "logoImage": "imgs/education/utad-logo.webp",
+        "dates": {
+            "es": "Sep 2026 - Presente",
+            "en": "Sep 2026 - Present"
+        },
+        "description": {
+            "es": "Especialización técnica en modelos de inteligencia artificial, procesamiento masivo de datos, algoritmos de aprendizaje automático y análisis predictivo.",
+            "en": "Advanced training in AI models, big data processing pipelines, machine learning algorithms, and predictive analytics."
+        },
+        "icon": "fas fa-brain",
+        "isMuted": false
+    },
+    {
+        "degree": {
+            "es": "Grado Superior en DAM",
+            "en": "Higher Degree (DAM)"
+        },
+        "institution": "ESIC Business & Marketing School",
+        "bgImage": "imgs/education/esic-bg.webp",
+        "logoImage": "imgs/education/esic-logo.webp",
+        "dates": {
+            "es": "Sep 2024 - Jul 2026",
+            "en": "Sep 2024 - Jul 2026"
+        },
+        "description": {
+            "es": "Desarrollo de Aplicaciones Multiplataforma. Formación integral en Java, Android SDK, Python, bases de datos y arquitectura software.",
+            "en": "Multiplatform Application Development. Full curriculum covering Java, Android SDK, Python, databases, and software architecture."
+        },
+        "icon": "fas fa-code",
+        "isMuted": false
+    },
+    {
+        "degree": {
+            "es": "Bachillerato Tecnológico",
+            "en": "Technological Baccalaureate"
+        },
+        "institution": "Colegio Los Robles",
+        "bgImage": "imgs/education/robles-bg.webp",
+        "logoImage": "imgs/education/robles-logo.webp",
+        "dates": {
+            "es": "Sep 2021 - Jul 2024",
+            "en": "Sep 2021 - Jul 2024"
+        },
+        "description": null,
+        "icon": "fas fa-school",
+        "isMuted": true
+    }
+]

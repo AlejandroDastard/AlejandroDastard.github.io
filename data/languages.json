@@ -1,0 +1,86 @@
+[
+    {
+        "name": {
+            "es": "Español",
+            "en": "Spanish"
+        },
+        "code": "ES",
+        "banner": "imgs/languages/es-banner.webp",
+        "flag": "https://flagcdn.com/w80/es.png",
+        "badges": [
+            {
+                "type": "blue",
+                "icon": "fas fa-comment-dots",
+                "text": {
+                    "es": "Nativo",
+                    "en": "Native"
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "es": "Inglés",
+            "en": "English"
+        },
+        "code": "EN",
+        "banner": "imgs/languages/en-banner.webp",
+        "flag": "https://flagcdn.com/w80/gb.png",
+        "badges": [
+            {
+                "type": "blue",
+                "icon": "fas fa-comment-dots",
+                "text": {
+                    "es": "Competencia C1",
+                    "en": "C1 Competence"
+                }
+            },
+            {
+                "type": "green",
+                "icon": "fas fa-certificate",
+                "text": {
+                    "es": "Certificado B1",
+                    "en": "B1 Certified"
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "es": "Japonés",
+            "en": "Japanese"
+        },
+        "code": "JP",
+        "banner": "imgs/languages/jp-banner.webp",
+        "flag": "https://flagcdn.com/w80/jp.png",
+        "badges": [
+            {
+                "type": "green",
+                "icon": "fas fa-certificate",
+                "text": {
+                    "es": "Certificado N5",
+                    "en": "N5 Certified"
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "es": "Francés",
+            "en": "French"
+        },
+        "code": "FR",
+        "banner": "imgs/languages/fr-banner.webp",
+        "flag": "https://flagcdn.com/w80/fr.png",
+        "badges": [
+            {
+                "type": "blue",
+                "icon": "fas fa-comment-dots",
+                "text": {
+                    "es": "Competencia A2",
+                    "en": "A2 Competence"
+                }
+            }
+        ]
+    }
+]

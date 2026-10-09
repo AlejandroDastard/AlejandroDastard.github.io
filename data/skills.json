@@ -1,0 +1,122 @@
+[
+    {
+        "name": {
+            "es": "Frontend y Web",
+            "en": "Frontend & Web"
+        },
+        "icon": "fas fa-code",
+        "colorClass": "cat-purple",
+        "badges": [
+            { "label": "JavaScript", "badgeUrl": "https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" },
+            { "label": "CSS3", "badgeUrl": "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white" },
+            { "label": "HTML5", "badgeUrl": "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white" },
+            { "label": "Bootstrap", "badgeUrl": "https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white" },
+            { "label": "jQuery", "badgeUrl": "https://img.shields.io/badge/-jQuery-0769AD?style=flat&logo=jquery&logoColor=white" }
+        ]
+    },
+    {
+        "name": {
+            "es": "Backend y APIs",
+            "en": "Backend & APIs"
+        },
+        "icon": "fas fa-server",
+        "colorClass": "cat-red",
+        "badges": [
+            { "label": "RESTful APIs", "badgeUrl": "https://img.shields.io/badge/-RESTful_APIs-005571?style=flat&logo=fastapi&logoColor=white" },
+            { "label": "Spring Boot", "badgeUrl": "https://img.shields.io/badge/-Spring_Boot-6DB33F?style=flat&logo=springboot&logoColor=white" },
+            { "label": "Java", "badgeUrl": "https://img.shields.io/badge/-Java-007396?style=flat&logo=openjdk&logoColor=white" },
+            { "label": "Spring Security", "badgeUrl": "https://img.shields.io/badge/-Spring_Security-6DB33F?style=flat&logo=springsecurity&logoColor=white" },
+            { "label": "Hibernate", "badgeUrl": "https://img.shields.io/badge/-Hibernate-59666C?style=flat&logo=hibernate&logoColor=white" },
+            { "label": "Django", "badgeUrl": "https://img.shields.io/badge/-Django-092E20?style=flat&logo=django&logoColor=white" },
+            { "label": "Laravel", "badgeUrl": "https://img.shields.io/badge/-Laravel-FF2D20?style=flat&logo=laravel&logoColor=white" },
+            { "label": "PHP", "badgeUrl": "https://img.shields.io/badge/-PHP-777BB4?style=flat&logo=php&logoColor=white" },
+            { "label": "Flask", "badgeUrl": "https://img.shields.io/badge/-Flask-000000?style=flat&logo=flask&logoColor=white" },
+            { "label": "Maven", "badgeUrl": "https://img.shields.io/badge/-Maven-C71A36?style=flat&logo=apache-maven&logoColor=white" },
+            { "label": "Composer", "badgeUrl": "https://img.shields.io/badge/-Composer-885630?style=flat&logo=composer&logoColor=white" }
+        ]
+    },
+    {
+        "name": {
+            "es": "Desarrollo Móvil",
+            "en": "Mobile Development"
+        },
+        "icon": "fas fa-mobile-alt",
+        "colorClass": "cat-green",
+        "badges": [
+            { "label": "Kotlin", "badgeUrl": "https://img.shields.io/badge/-Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white" },
+            { "label": "Jetpack Compose", "badgeUrl": "https://img.shields.io/badge/-Jetpack_Compose-4285F4?style=flat&logo=jetpackcompose&logoColor=white" },
+            { "label": "React Native", "badgeUrl": "https://img.shields.io/badge/-React_Native-61DAFB?style=flat&logo=react&logoColor=black" },
+            { "label": "Android SDK", "badgeUrl": "https://img.shields.io/badge/-Android_SDK-3DDC84?style=flat&logo=android&logoColor=white" }
+        ]
+    },
+    {
+        "name": {
+            "es": "IA y Data Science",
+            "en": "AI & Data Science"
+        },
+        "icon": "fas fa-brain",
+        "colorClass": "cat-indigo",
+        "badges": [
+            { "label": "Python", "badgeUrl": "https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white" },
+            { "label": "Pandas", "badgeUrl": "https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white" },
+            { "label": "NumPy", "badgeUrl": "https://img.shields.io/badge/-NumPy-013243?style=flat&logo=numpy&logoColor=white" },
+            { "label": "Matplotlib", "badgeUrl": "https://img.shields.io/badge/-Matplotlib-11557C?style=flat&logo=python&logoColor=white" },
+            { "label": "Jupyter", "badgeUrl": "https://img.shields.io/badge/-Jupyter-F37626?style=flat&logo=jupyter&logoColor=white" }
+        ]
+    },
+    {
+        "name": {
+            "es": "Bases de Datos",
+            "en": "Databases"
+        },
+        "icon": "fas fa-database",
+        "colorClass": "cat-amber",
+        "badges": [
+            { "label": "PostgreSQL", "badgeUrl": "https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white" },
+            { "label": "MySQL", "badgeUrl": "https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white" },
+            { "label": "MongoDB", "badgeUrl": "https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" },
+            { "label": "MariaDB", "badgeUrl": "https://img.shields.io/badge/-MariaDB-003545?style=flat&logo=mariadb&logoColor=white" }
+        ]
+    },
+    {
+        "name": {
+            "es": "DevOps y Cloud",
+            "en": "DevOps & Cloud"
+        },
+        "icon": "fas fa-cloud",
+        "colorClass": "cat-slate",
+        "badges": [
+            { "label": "Docker", "badgeUrl": "https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white" },
+            { "label": "Microsoft Azure", "badgeUrl": "https://img.shields.io/badge/-Microsoft_Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white" },
+            { "label": "Git", "badgeUrl": "https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white" },
+            { "label": "GitHub", "badgeUrl": "https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white" }
+        ]
+    },
+    {
+        "name": {
+            "es": "Herramientas y Testing",
+            "en": "Tools & Testing"
+        },
+        "icon": "fas fa-tools",
+        "colorClass": "cat-teal",
+        "badges": [
+            { "label": "JUnit 5", "badgeUrl": "https://img.shields.io/badge/-JUnit5-25A162?style=flat&logo=junit5&logoColor=white" },
+            { "label": "pytest", "badgeUrl": "https://img.shields.io/badge/-pytest-0A9EDC?style=flat&logo=pytest&logoColor=white" },
+            { "label": "Postman", "badgeUrl": "https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white" },
+            { "label": "Swagger", "badgeUrl": "https://img.shields.io/badge/-Swagger-85EA2D?style=flat&logo=swagger&logoColor=black" }
+        ]
+    },
+    {
+        "name": {
+            "es": "CMS y Automatización",
+            "en": "CMS & Automation"
+        },
+        "icon": "fas fa-cogs",
+        "colorClass": "cat-rose",
+        "badges": [
+            { "label": "WordPress", "badgeUrl": "https://img.shields.io/badge/-WordPress-21759B?style=flat&logo=wordpress&logoColor=white" },
+            { "label": "HubSpot", "badgeUrl": "https://img.shields.io/badge/-HubSpot-FF7A59?style=flat&logo=hubspot&logoColor=white" },
+            { "label": "Google Apps Script", "badgeUrl": "https://img.shields.io/badge/-Google_Apps_Script-4285F4?style=flat&logo=google&logoColor=white" }
+        ]
+    }
+]

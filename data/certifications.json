@@ -1,0 +1,61 @@
+[
+    {
+        "name": {
+            "es": "IT Specialist - Python",
+            "en": "IT Specialist - Python"
+        },
+        "issuer": "Pearson",
+        "image": "https://images.credly.com/size/110x110/images/3c4602d8-832e-4a24-b42d-00359ce746f7/ITS-Badges_Python_1200px.png",
+        "link": "https://www.credly.com/badges/660b26b0-2216-41af-84cd-93ddb7798959/linked_in_profile",
+        "issueDate": "2026-02-17",
+        "expiryDate": "2031-02-17",
+        "isSvg": false
+    },
+    {
+        "name": {
+            "es": "Azure AI Fundamentals (AI-900)",
+            "en": "Azure AI Fundamentals (AI-900)"
+        },
+        "issuer": "Microsoft",
+        "image": "https://images.credly.com/size/110x110/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png",
+        "link": "https://www.credly.com/earner/earned/badge/2e7f71b7-a1dc-4210-9d62-5fcbd80ed083",
+        "issueDate": "2025-06-12",
+        "expiryDate": null,
+        "isSvg": false
+    },
+    {
+        "name": {
+            "es": "Azure Data Fundamentals (DP-900)",
+            "en": "Azure Data Fundamentals (DP-900)"
+        },
+        "issuer": "Microsoft",
+        "image": "https://images.credly.com/size/110x110/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
+        "link": "https://www.credly.com/earner/earned/badge/43c89b66-18ed-473a-933b-38a3a801cd3c",
+        "issueDate": "2025-06-12",
+        "expiryDate": null,
+        "isSvg": false
+    },
+    {
+        "name": {
+            "es": "Software de Service Hub",
+            "en": "Service Hub Software"
+        },
+        "issuer": "HubSpot Academy",
+        "image": "https://www.vectorlogo.zone/logos/hubspot/hubspot-icon.svg",
+        "link": "https://app.hubspot.com/academy/achievements/pymsj9p2/es/1/alejandro-dastard-dore/certificacion-del-software-de-service-hub",
+        "issueDate": "2025-05-20",
+        "expiryDate": "2026-06-19"
+    },
+    {
+        "name": {
+            "es": "Azure Fundamentals (AZ-900)",
+            "en": "Azure Fundamentals (AZ-900)"
+        },
+        "issuer": "Microsoft",
+        "image": "https://images.credly.com/size/110x110/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png",
+        "link": "https://www.credly.com/earner/earned/badge/70872db8-c0cd-4dc9-b666-cae5d6fb26f3",
+        "issueDate": "2025-04-03",
+        "expiryDate": null,
+        "isSvg": false
+    }
+]

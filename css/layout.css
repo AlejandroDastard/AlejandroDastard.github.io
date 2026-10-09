@@ -1,0 +1,285 @@
+/* Contenedores de ancho uniforme */
+.content-container,
+.content-container-medium,
+.content-container-wide {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* Secciones generales */
+.section {
+    padding: 4.5rem 0;
+    border-bottom: 1px solid var(--color-slate-200);
+    scroll-margin-top: 4rem;
+    background-color: var(--color-white);
+}
+
+.section-tinted {
+    background-color: #f8fafc99;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Contenedor del título con icono a la izquierda */
+.section-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1.15rem;
+}
+
+.section-icon-box {
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: var(--radius-lg);
+    background-color: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.section-header:hover .section-icon-box {
+    transform: scale(1.05);
+    background-color: rgba(59, 130, 246, 0.15);
+}
+
+.section-text-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: var(--color-primary);
+    margin-bottom: 0.2rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-slate-900);
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    color: var(--color-slate-500);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+/* Navegación Superior */
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--color-slate-200);
+}
+
+.nav-container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.logo-box {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.logo-text {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-slate-900);
+}
+
+.nav-links {
+    display: none;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.nav-link {
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-slate-600);
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+    background-color: var(--color-slate-100);
+}
+
+.lang-switch-wrapper {
+    margin-left: 0.75rem;
+    padding-left: 0.75rem;
+    border-left: 1px solid var(--color-slate-200);
+}
+
+.nav-mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.mobile-menu-btn {
+    font-size: 1.25rem;
+    color: var(--color-slate-600);
+    padding: 0.4rem;
+}
+
+.mobile-menu {
+    border-bottom: 1px solid var(--color-slate-200);
+    background-color: var(--color-white);
+    padding: 0.5rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.mobile-link {
+    display: block;
+    padding: 0.6rem 0.8rem;
+    border-radius: var(--radius-md);
+    color: var(--color-slate-700);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.mobile-link:hover {
+    background-color: var(--color-slate-50);
+    color: var(--color-primary);
+}
+
+/* Puntos Laterales Flotantes */
+.side-dots-nav {
+    display: none;
+    position: fixed;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 40;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    padding: 0.85rem 0.6rem;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--color-slate-200);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+.side-dot-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.side-dot-tooltip {
+    position: absolute;
+    right: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateX(4px);
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 0.25rem 0.6rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: var(--shadow-md);
+}
+
+.side-dot-link:hover .side-dot-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.side-dot {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: var(--radius-full);
+    background-color: var(--color-slate-300);
+    transition: var(--transition);
+}
+
+.side-dot-link:hover .side-dot {
+    background-color: var(--color-primary);
+    transform: scale(1.2);
+}
+
+.side-dot.active {
+    background-color: var(--color-primary);
+    transform: scale(1.35);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+/* Footer */
+.footer {
+    padding: 2.5rem 0;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border-top: 1px solid var(--color-slate-800);
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    color: var(--color-slate-400);
+}
+
+@media (min-width: 768px) {
+    .nav-links { display: flex; }
+    .nav-mobile-actions { display: none; }
+}
+
+@media (min-width: 1024px) {
+    .side-dots-nav { display: flex; }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Dastard - Software Developer</title>
+    <!-- Fuentes e iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Archivo maestro de estilos modularizados -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Navegación Lateral Flotante (Desktop) -->
+    <nav id="side-dots-nav" class="side-dots-nav" aria-label="Navegación lateral">
+        <a href="#home" class="side-dot-link" data-target="home">
+            <span class="side-dot-tooltip">Sobre Mí</span>
+            <span class="side-dot"></span>
+        </a>
+        <a href="#experience" class="side-dot-link" data-target="experience">
+            <span class="side-dot-tooltip">Experiencia</span>
+            <span class="side-dot"></span>
+        </a>
+        <a href="#projects" class="side-dot-link" data-target="projects">
+            <span class="side-dot-tooltip">Proyectos</span>
+            <span class="side-dot"></span>
+        </a>
+        <a href="#education" class="side-dot-link" data-target="education">
+            <span class="side-dot-tooltip">Estudios</span>
+            <span class="side-dot"></span>
+        </a>
+        <a href="#skills" class="side-dot-link" data-target="skills">
+            <span class="side-dot-tooltip">Habilidades</span>
+            <span class="side-dot"></span>
+        </a>
+        <a href="#certs" class="side-dot-link" data-target="certs">
+            <span class="side-dot-tooltip">Certificaciones</span>
+            <span class="side-dot"></span>
+        </a>
+        <a href="#languages" class="side-dot-link" data-target="languages">
+            <span class="side-dot-tooltip">Idiomas</span>
+            <span class="side-dot"></span>
+        </a>
+    </nav>
+
+    <!-- Barra de Navegación Superior -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-box">AD</span>
+                <span class="logo-text">Alejandro D.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home" data-i18n="nav_about" class="nav-link">Sobre Mí</a>
+                <a href="#experience" data-i18n="nav_experience" class="nav-link">Experiencia</a>
+                <a href="#projects" data-i18n="nav_projects" class="nav-link">Proyectos</a>
+                <a href="#education" data-i18n="nav_education" class="nav-link">Estudios</a>
+                <a href="#skills" data-i18n="nav_skills" class="nav-link">Habilidades</a>
+                <a href="#certs" data-i18n="nav_certs" class="nav-link">Certificaciones</a>
+                <a href="#languages" data-i18n="nav_languages" class="nav-link">Idiomas</a>
+                
+                <div class="lang-switch-wrapper">
+                    <button type="button" class="lang-switch-btn" id="lang-toggle-desktop" aria-label="Cambiar idioma">
+                        <span id="lang-btn-es" class="active-lang">ES</span>
+                        <span id="lang-btn-en" class="inactive-lang">EN</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-mobile-actions">
+                <button type="button" class="lang-switch-btn" id="lang-toggle-mobile" aria-label="Cambiar idioma">
+                    <span id="lang-btn-es-mob" class="active-lang">ES</span>
+                    <span id="lang-btn-en-mob" class="inactive-lang">EN</span>
+                </button>
+                <button type="button" class="mobile-menu-btn" id="mobile-menu-trigger" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <a href="#home" data-i18n="nav_about" class="mobile-link">Sobre Mí</a>
+            <a href="#experience" data-i18n="nav_experience" class="mobile-link">Experiencia</a>
+            <a href="#projects" data-i18n="nav_projects" class="mobile-link">Proyectos</a>
+            <a href="#education" data-i18n="nav_education" class="mobile-link">Estudios</a>
+            <a href="#skills" data-i18n="nav_skills" class="mobile-link">Habilidades</a>
+            <a href="#certs" data-i18n="nav_certs" class="mobile-link">Certificaciones</a>
+            <a href="#languages" data-i18n="nav_languages" class="mobile-link">Idiomas</a>
+        </div>
+    </nav>
+
+    <!-- Hero / Perfil -->
+    <header id="home" class="hero-section">
+        <div class="hero-bg-layer">
+            <img src="imgs/hero-bg.webp" alt="" class="hero-bg-img" data-fallback="hide">
+        </div>
+        <div class="hero-glow"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-profile">
+                    <div class="profile-avatar-wrapper">
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHyykbloWkVmw/profile-displayphoto-scale_400_400/B56Zn3fXaWG4Ag-/0/1760793820028?e=1792022400&v=beta&t=GvoT56TCfA0OotBuvQox-rLOdbOXa6Ghg7IL7R8X824" 
+                             alt="Alejandro Dastard" 
+                             class="profile-avatar">
+                    </div>
+
+                    <h1 class="profile-name">Alejandro Dastard</h1>
+                    <h2 data-i18n="hero_role" class="profile-role">Desarrollador de Software</h2>
+                    
+                    <p class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i> Madrid, España
+                    </p>
+                    
+                    <div class="profile-actions">
+                        <a href="mailto:alejandrodastard@gmail.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/alejandro-dastard-dore-486612368/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-bio">
+                    <div class="eyebrow-badge">
+                        <i class="fas fa-terminal"></i>
+                        <span data-i18n="about_tag">Perfil Profesional</span>
+                    </div>
+
+                    <h3 data-i18n="about_title" class="bio-title">Sobre Mí</h3>
+                    
+                    <p data-i18n="about_p1" class="bio-text">
+                        Desarrollador de software versátil con una base sólida en el desarrollo de aplicaciones multiplataforma y entornos web, complementando mi perfil con una especialización avanzada en <strong>Inteligencia Artificial y Big Data</strong>.
+                    </p>
+                    <p data-i18n="about_p2" class="bio-text">
+                        Apasionado por la tecnología, el aprendizaje continuo y la resolución metódica de problemas complejos. Mi objetivo es unir las mejores prácticas de la ingeniería de software tradicional con herramientas analíticas emergentes para construir soluciones eficientes, seguras y orientadas al valor real.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Experiencia Laboral -->
+        <section id="experience" class="section section-tinted">
+            <div class="content-container-wide">
+                <header class="section-header" data-collapse-target="experience">
+                    <div class="section-title-wrap">
+                        <div class="section-icon-box">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="section-text-group">
+                            <span data-i18n="exp_section_eyebrow" class="section-eyebrow">Trayectoria</span>
+                            <h2 data-i18n="exp_section_title" class="section-title">Experiencia Laboral</h2>
+                        </div>
+                    </div>
+                    <button type="button" class="section-collapse-btn" aria-label="Plegar sección">
+                        <i class="fas fa-chevron-up section-toggle-icon"></i>
+                    </button>
+                </header>
+
+                <div id="body-experience" class="section-collapse-body">
+                    <div id="experience-timeline-container" class="timeline"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="projects" class="section">
+            <div class="content-container-wide">
+                <header class="section-header" data-collapse-target="projects">
+                    <div class="section-title-wrap">
+                        <div class="section-icon-box">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="section-text-group">
+                            <span data-i18n="proj_section_eyebrow" class="section-eyebrow">Portfolio</span>
+                            <h2 data-i18n="proj_section_title" class="section-title">Proyectos</h2>
+                        </div>
+                    </div>
+                    <button type="button" class="section-collapse-btn" aria-label="Plegar sección">
+                        <i class="fas fa-chevron-up section-toggle-icon"></i>
+                    </button>
+                </header>
+
+                <div id="body-projects" class="section-collapse-body">
+                    <div id="projects-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formación y Estudios -->
+        <section id="education" class="section section-tinted">
+            <div class="content-container-wide">
+                <header class="section-header" data-collapse-target="education">
+                    <div class="section-title-wrap">
+                        <div class="section-icon-box">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="section-text-group">
+                            <span data-i18n="edu_section_eyebrow" class="section-eyebrow">Formación</span>
+                            <h2 data-i18n="edu_section_title" class="section-title">Formación y Estudios</h2>
+                        </div>
+                    </div>
+                    <button type="button" class="section-collapse-btn" aria-label="Plegar sección">
+                        <i class="fas fa-chevron-up section-toggle-icon"></i>
+                    </button>
+                </header>
+
+                <div id="body-education" class="section-collapse-body">
+                    <div id="education-timeline-container" class="timeline"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades Técnicas -->
+        <section id="skills" class="section">
+            <div class="content-container-wide">
+                <header class="section-header" data-collapse-target="skills">
+                    <div class="section-title-wrap">
+                        <div class="section-icon-box">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="section-text-group">
+                            <span data-i18n="skills_section_eyebrow" class="section-eyebrow">Stack</span>
+                            <h2 data-i18n="skills_section_title" class="section-title">Habilidades Técnicas y Herramientas</h2>
+                        </div>
+                    </div>
+                    <button type="button" class="section-collapse-btn" aria-label="Plegar sección">
+                        <i class="fas fa-chevron-up section-toggle-icon"></i>
+                    </button>
+                </header>
+
+                <div id="body-skills" class="section-collapse-body">
+                    <p data-i18n="skills_section_subtitle" class="section-subtitle">
+                        Ecosistemas y lenguajes ordenados según mi especialización y práctica actual.
+                    </p>
+                    <div id="skills-accordion-container" class="accordion-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificaciones -->
+        <section id="certs" class="section section-tinted dynamic-grid-section">
+            <div class="content-container-wide">
+                <header class="section-header" data-collapse-target="certs">
+                    <div class="section-title-wrap">
+                        <div class="section-icon-box">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="section-text-group">
+                            <span data-i18n="certs_section_eyebrow" class="section-eyebrow">Acreditaciones</span>
+                            <h2 data-i18n="certs_section_title" class="section-title">Certificaciones</h2>
+                        </div>
+                    </div>
+                    <button type="button" class="section-collapse-btn" aria-label="Plegar sección">
+                        <i class="fas fa-chevron-up section-toggle-icon"></i>
+                    </button>
+                </header>
+
+                <div id="body-certs" class="section-collapse-body">
+                    <p data-i18n="certs_section_subtitle" class="section-subtitle">
+                        Credenciales oficiales que validan mis conocimientos y competencias técnicas.
+                    </p>
+                    <div id="certs-container" class="cards-grid target-grid"></div>
+                    <div class="toggle-btn-wrapper"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Idiomas -->
+        <section id="languages" class="section dynamic-grid-section">
+            <div class="content-container-wide">
+                <header class="section-header" data-collapse-target="languages">
+                    <div class="section-title-wrap">
+                        <div class="section-icon-box">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="section-text-group">
+                            <span data-i18n="lang_section_eyebrow" class="section-eyebrow">Comunicación</span>
+                            <h2 data-i18n="lang_section_title" class="section-title">Idiomas</h2>
+                        </div>
+                    </div>
+                    <button type="button" class="section-collapse-btn" aria-label="Plegar sección">
+                        <i class="fas fa-chevron-up section-toggle-icon"></i>
+                    </button>
+                </header>
+
+                <div id="body-languages" class="section-collapse-body">
+                    <p data-i18n="lang_section_subtitle" class="section-subtitle">
+                        Competencias lingüísticas y certificaciones oficiales.
+                    </p>
+                    <div id="languages-container" class="cards-grid target-grid lang-grid"></div>
+                    <div class="toggle-btn-wrapper"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="content-container-wide text-center">
+            <p class="footer-text">
+                &copy; <span id="copyright-year">2026</span> Alejandro Dastard. <span data-i18n="footer_hosted">Desplegado en GitHub Pages.</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script único orquestador como módulo ES6 -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

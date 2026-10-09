@@ -1,0 +1,292 @@
+/* Botones */
+.btn {
+    flex: 1;
+    padding: 0.65rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+}
+
+.btn-secondary {
+    background-color: var(--color-slate-800);
+    border: 1px solid var(--color-slate-700);
+    color: var(--color-white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-slate-700);
+}
+
+/* Insignias y etiquetas */
+.pill-badge {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-full);
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tag {
+    background-color: var(--color-slate-100);
+    color: var(--color-slate-700);
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.3rem 0.65rem;
+    border-radius: var(--radius-md);
+    white-space: nowrap;
+}
+
+.badge-blue {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid rgba(191, 219, 254, 0.7);
+}
+
+.badge-green {
+    background-color: #ecfdf5;
+    color: #047857;
+    border: 1px solid rgba(167, 243, 208, 0.7);
+}
+
+.badge-red {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid rgba(254, 202, 202, 0.7);
+}
+
+/* Colapso de secciones */
+.section-collapse-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: var(--radius-md);
+    background: var(--color-slate-50);
+    border: 1px solid var(--color-slate-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-slate-400);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.section-header:hover .section-collapse-btn {
+    color: var(--color-primary);
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+.section-toggle-icon {
+    transition: transform 0.3s ease;
+    font-size: 0.875rem;
+}
+
+.section-collapse-body {
+    max-height: 2800px;
+    opacity: 1;
+    overflow: hidden;
+    padding-top: 0.35rem; /* Margen interno para que no corte el translateY en hover */
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
+.section-collapsed .section-collapse-body {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none;
+    padding-top: 0 !important;
+}
+
+.section-collapsed .section-toggle-icon {
+    transform: rotate(-90deg) !important;
+}
+
+/* Selector de Idioma */
+.lang-switch-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-slate-100);
+    border-radius: var(--radius-full);
+    padding: 3px;
+    border: 1px solid var(--color-slate-200);
+}
+
+.lang-switch-btn span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: var(--radius-full);
+    transition: var(--transition);
+}
+
+.active-lang {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.inactive-lang {
+    color: var(--color-slate-500);
+}
+
+/* Acordeón de Habilidades */
+.accordion-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    padding-top: 0.5rem;
+}
+
+.accordion-item {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-slate-200);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    align-self: start;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.accordion-header:hover {
+    background-color: var(--color-slate-50);
+}
+
+.accordion-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.category-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.cat-green { background: #f0fdf4; color: #16a34a; }
+.cat-purple { background: #faf5ff; color: #9333ea; }
+.cat-blue { background: #eff6ff; color: #2563eb; }
+.cat-amber { background: #fffbeb; color: #d97706; }
+.cat-red { background: #fef2f2; color: #dc2626; }
+.cat-slate { background: #f1f5f9; color: #475569; }
+
+.category-name {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-slate-900);
+}
+
+.accordion-icon {
+    font-size: 0.85rem;
+    color: var(--color-slate-400);
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 1.25rem;
+    background-color: #f8fafc99;
+    border-top: 1px solid transparent;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.3s ease, border-color 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+    border-color: var(--color-slate-100);
+}
+
+.badge-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.skill-badge {
+    height: 1.75rem;
+    transition: transform 0.2s ease;
+}
+
+.skill-badge:hover {
+    transform: translateY(-2px);
+}
+
+/* Botón Ver Más */
+.toggle-btn-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.toggle-grid-btn {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-slate-300);
+    color: var(--color-slate-700);
+    font-weight: 700;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    box-shadow: var(--shadow-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.toggle-grid-btn:hover {
+    background-color: var(--color-slate-50);
+    color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .accordion-grid { grid-template-columns: repeat(2, 1fr); }
+}
