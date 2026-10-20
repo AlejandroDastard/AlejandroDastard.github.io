@@ -29,7 +29,17 @@ export const translations = {
         lang_section_subtitle: "Competencias lingüísticas y certificaciones oficiales.",
         btn_see_more: "Ver más",
         btn_see_less: "Ver menos",
-        footer_hosted: "Desplegado en GitHub Pages."
+        footer_hosted: "Desplegado en GitHub Pages.",
+        btn_cv_title: "Descargar CV",
+        cv_education: "EDUCACIÓN",
+        cv_experience: "EXPERIENCIA LABORAL",
+        cv_projects: "PROYECTOS DESTACADOS",
+        cv_skills: "HABILIDADES TÉCNICAS",
+        cv_languages: "IDIOMAS",
+        cv_certifications: "CERTIFICACIONES",
+        cv_location: "Madrid, España",
+        status_open: "Disponible",
+        status_busy: "Ocupado"
     },
     en: {
         nav_about: "About",
@@ -61,6 +71,16 @@ export const translations = {
         lang_section_subtitle: "Linguistic proficiencies and certified accreditations.",
         btn_see_more: "Show more",
         btn_see_less: "Show less",
-        footer_hosted: "Hosted on GitHub Pages."
+        footer_hosted: "Hosted on GitHub Pages.",
+        btn_cv_title: "Download CV",
+        cv_education: "EDUCATION",
+        cv_experience: "EXPERIENCE",
+        cv_projects: "FEATURED PROJECTS",
+        cv_skills: "TECHNICAL SKILLS",
+        cv_languages: "LANGUAGES",
+        cv_certifications: "CERTIFICATIONS",
+        cv_location: "Madrid, Spain",
+        status_open: "Available",
+        status_busy: "Employed"
     }
 };

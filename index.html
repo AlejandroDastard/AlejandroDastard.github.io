@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandro Dastard - Software Developer</title>
-    <!-- Fuentes e iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Archivo maestro de estilos modularizados -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-    <!-- Navegación Lateral Flotante (Desktop) -->
+    <!-- Navigation Bar -->
     <nav id="side-dots-nav" class="side-dots-nav" aria-label="Navegación lateral">
         <a href="#home" class="side-dot-link" data-target="home">
             <span class="side-dot-tooltip">Sobre Mí</span>
@@ -44,12 +42,12 @@
         </a>
     </nav>
 
-    <!-- Barra de Navegación Superior -->
+    <!-- Top Navigation Bar -->
     <nav class="top-nav">
         <div class="nav-container">
             <a href="#home" class="nav-logo">
                 <span class="logo-box">AD</span>
-                <span class="logo-text">Alejandro D.</span>
+                <span class="logo-text">Alejandro Dastard</span>
             </a>
 
             <div class="nav-links">
@@ -91,7 +89,7 @@
         </div>
     </nav>
 
-    <!-- Hero / Perfil -->
+    <!-- Hero -->
     <header id="home" class="hero-section">
         <div class="hero-bg-layer">
             <img src="imgs/hero-bg.webp" alt="" class="hero-bg-img" data-fallback="hide">
@@ -101,10 +99,14 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-profile">
-                    <div class="profile-avatar-wrapper">
-                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHyykbloWkVmw/profile-displayphoto-scale_400_400/B56Zn3fXaWG4Ag-/0/1760793820028?e=1792022400&v=beta&t=GvoT56TCfA0OotBuvQox-rLOdbOXa6Ghg7IL7R8X824" 
-                             alt="Alejandro Dastard" 
-                             class="profile-avatar">
+                    <div class="profile-avatar-wrapper status-open" id="profile-avatar-wrapper" tabindex="0" role="button" aria-label="Estado laboral">
+                        <img src="imgs/user/profile.jpg" 
+                            alt="Alejandro Dastard" 
+                            class="profile-avatar">
+                        <div class="profile-avatar-overlay">
+                            <span class="status-overlay-dot"></span>
+                            <span class="status-overlay-text" id="status-overlay-text" data-i18n="status_open">Disponible</span>
+                        </div>
                     </div>
 
                     <h1 class="profile-name">Alejandro Dastard</h1>
@@ -115,11 +117,21 @@
                     </p>
                     
                     <div class="profile-actions">
-                        <a href="mailto:alejandrodastard@gmail.com" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i> Email
+                        <!-- Download CV -->
+                        <button type="button" id="btn-download-cv" class="btn btn-secondary btn-icon" data-i18n-title="btn_cv_title" title="Descargar CV" aria-label="Descargar CV">
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+                        <!-- GitHub -->
+                        <a href="https://github.com/AlejandroDastard" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-icon" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/alejandro-dastard-dore-486612368/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            <i class="fab fa-linkedin"></i> LinkedIn
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/alejandro-dastard-dore-486612368/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-icon" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:alejandrodastard@gmail.com" class="btn btn-secondary btn-icon" title="Email" aria-label="Enviar Email">
+                            <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
@@ -144,7 +156,7 @@
     </header>
 
     <main>
-        <!-- Experiencia Laboral -->
+        <!-- Work Experience -->
         <section id="experience" class="section section-tinted">
             <div class="content-container-wide">
                 <header class="section-header" data-collapse-target="experience">
@@ -168,7 +180,7 @@
             </div>
         </section>
 
-        <!-- Proyectos -->
+        <!-- Projects -->
         <section id="projects" class="section">
             <div class="content-container-wide">
                 <header class="section-header" data-collapse-target="projects">
@@ -192,7 +204,7 @@
             </div>
         </section>
 
-        <!-- Formación y Estudios -->
+        <!-- Studies -->
         <section id="education" class="section section-tinted">
             <div class="content-container-wide">
                 <header class="section-header" data-collapse-target="education">
@@ -216,7 +228,7 @@
             </div>
         </section>
 
-        <!-- Habilidades Técnicas -->
+        <!-- Skills -->
         <section id="skills" class="section">
             <div class="content-container-wide">
                 <header class="section-header" data-collapse-target="skills">
@@ -243,7 +255,7 @@
             </div>
         </section>
 
-        <!-- Certificaciones -->
+        <!-- Certifications -->
         <section id="certs" class="section section-tinted dynamic-grid-section">
             <div class="content-container-wide">
                 <header class="section-header" data-collapse-target="certs">
@@ -271,7 +283,7 @@
             </div>
         </section>
 
-        <!-- Idiomas -->
+        <!-- Languages -->
         <section id="languages" class="section dynamic-grid-section">
             <div class="content-container-wide">
                 <header class="section-header" data-collapse-target="languages">
@@ -308,7 +320,7 @@
         </div>
     </footer>
 
-    <!-- Script único orquestador como módulo ES6 -->
     <script type="module" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
 </html>

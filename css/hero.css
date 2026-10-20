@@ -54,23 +54,80 @@
     width: 100%;
 }
 
+.profile-avatar-wrapper.status-open {
+    --status-color: #10b981; /* Verde esmeralda (Libre) */
+}
+
+.profile-avatar-wrapper.status-busy {
+    --status-color: #f59e0b; /* Ámbar / Naranja (Ocupado) */
+}
+
 .profile-avatar-wrapper {
+    position: relative;
+    width: 11rem;
+    height: 11rem;
     margin-bottom: 1.25rem;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    outline: 4px solid var(--status-color, #10b981);
+    outline-offset: 4px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, outline-color 0.3s ease;
+    overflow: hidden;
+}
+
+.profile-avatar-wrapper:hover,
+.profile-avatar-wrapper:focus-visible,
+.profile-avatar-wrapper.is-active {
+    transform: scale(1.03);
 }
 
 .profile-avatar {
-    width: 11rem;
-    height: 11rem;
+    width: 100%;
+    height: 100%;
     border-radius: var(--radius-full);
     object-fit: cover;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
-    outline: 4px solid #10b981;
-    outline-offset: 4px;
-    transition: transform 0.3s ease;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.profile-avatar:hover {
-    transform: scale(1.02);
+.profile-avatar-wrapper:hover .profile-avatar,
+.profile-avatar-wrapper:focus-visible .profile-avatar,
+.profile-avatar-wrapper.is-active .profile-avatar {
+    filter: brightness(0.3);
+    transform: scale(1.05);
+}
+
+.profile-avatar-overlay {
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    background: rgba(10, 15, 29, 0.6);
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+    text-align: center;
+}
+
+.profile-avatar-wrapper:hover .profile-avatar-overlay,
+.profile-avatar-wrapper:focus-visible .profile-avatar-overlay,
+.profile-avatar-wrapper.is-active .profile-avatar-overlay {
+    opacity: 1;
+}
+
+.status-overlay-text {
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    user-select: none;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .profile-name {
@@ -98,9 +155,30 @@
 
 .profile-actions {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 0.75rem;
     width: 100%;
-    max-width: 20rem;
+    max-width: 18rem;
+    margin-top: 0.25rem;
+}
+
+.btn-icon {
+    flex: 0 0 2.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border-radius: var(--radius-md);
+    font-size: 1.15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-icon:hover {
+    transform: translateY(-2px);
 }
 
 .hero-bio {

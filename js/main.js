@@ -5,6 +5,7 @@ import { renderEducation } from './modules/education.js';
 import { renderSkills } from './modules/skills.js';
 import { renderCerts, processCertDates } from './modules/certifications.js';
 import { renderLanguages } from './modules/languages.js';
+import { generateHarvardCV } from './modules/cv-generator.js';
 
 let currentLang = 'es';
 const store = {
@@ -18,7 +19,7 @@ const store = {
 
 async function fetchSafe(url) {
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, { cache: 'no-store' });
         if (!response.ok) {
             console.error(`Error HTTP ${response.status} al cargar ${url}`);
             return [];
@@ -91,6 +92,13 @@ function setLanguage(lang) {
         }
     });
 
+    document.querySelectorAll('[data-i18n-title]').forEach(el => {
+        const key = el.getAttribute('data-i18n-title');
+        if (translations[lang] && translations[lang][key]) {
+            el.setAttribute('title', translations[lang][key]);
+        }
+    });
+
     renderAll();
 
     try {
@@ -125,7 +133,6 @@ function ensureSectionOpen(sectionId) {
     }
 }
 
-/* Modificado: cada acordeón conmuta su estado de forma independiente */
 function initAccordions() {
     document.querySelectorAll('.accordion-header').forEach(header => {
         header.onclick = () => {
@@ -271,6 +278,13 @@ function init() {
 
     if (langToggleDesk) langToggleDesk.addEventListener('click', toggleLanguage);
     if (langToggleMob) langToggleMob.addEventListener('click', toggleLanguage);
+
+    const cvBtn = document.getElementById('btn-download-cv');
+    if (cvBtn) {
+        cvBtn.addEventListener('click', () => {
+            generateHarvardCV(store, currentLang);
+        });
+    }
 
     initCollapsibles();
     initSideDots();
